@@ -1,3 +1,20 @@
+<#
+.SYNOPSIS
+    Installs a set of essential dependencies and runtimes for games and applications.
+
+.DESCRIPTION
+    Using Winget, this script automates the installation of various versions
+    of the following dependency packages:
+    - .NET Runtime and .NET Desktop Runtime
+    - Microsoft Visual C++ Redistributable (VCRedist)
+    - Microsoft DirectX
+
+.NOTES
+    Author:      joao-vcthr
+    Date:        09/21/2025
+    Requirements: Must be run as Administrator. An internet connection is required.
+#>
+
 $deps = @(
     "Microsoft.DotNet.Runtime.6",
     "Microsoft.DotNet.DesktopRuntime.8",

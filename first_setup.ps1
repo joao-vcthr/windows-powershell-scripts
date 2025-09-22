@@ -1,4 +1,24 @@
+<#
+.SYNOPSIS
+    Performs the initial setup for a newly installed Windows system.
 
+.DESCRIPTION
+    This script runs a series of essential tasks to prepare a new system.
+    Actions include:
+    - Configuring a high-performance power plan and disabling hibernation.
+    - Setting the system time zone and synchronizing the clock.
+    - Running system integrity checks (DISM, SFC, CHKDSK).
+    - Disabling and cleaning up System Restore.
+    - Disabling the SysMain (Superfetch) service.
+    - Optimizing the main disk (ideal for SSDs).
+    - Configuring the network with a secure DNS (Quad9) and clearing caches.
+    The computer will be restarted upon completion.
+
+.NOTES
+    Author:      joao-vcthr
+    Date:        09/21/2025
+    Requirements: Must be run as Administrator. An internet connection is required.
+#>
 
 $ErrorActionPreference = "Stop"
 

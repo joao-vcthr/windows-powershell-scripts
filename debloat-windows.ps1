@@ -1,4 +1,21 @@
+<#
+.SYNOPSIS
+    Removes bloatware, pre-installed apps, and optional Windows features.
 
+.DESCRIPTION
+    This script performs a deep clean of the system, uninstalling a large
+    list of Microsoft Store (UWP) apps and applications provisioned via Winget.
+    It also removes optional Windows components like WordPad, Media Player, and PowerShell ISE.
+    Finally, it disables System Restore to free up space.
+    The computer will be restarted upon completion.
+
+.NOTES
+    Author:      joao-vcthr
+    Date:        09/21/2025
+    Requirements: Must be run as Administrator.
+    Warning:    The removals are permanent and may require manual reinstallation
+                of a component if needed in the future.
+#>
 
 
 Write-Host "Desinstalando Apps" -ForegroundColor Yellow

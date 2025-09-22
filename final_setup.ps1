@@ -1,4 +1,21 @@
+<#
+.SYNOPSIS
+    Applies performance optimizations and fine-tuning to the system.
 
+.DESCRIPTION
+    This script applies advanced settings to optimize Windows performance,
+    especially for gaming and power users. Actions include:
+    - Disabling System Restore.
+    - Disabling Game DVR via the Windows Registry.
+    - Disabling a list of non-essential services (telemetry, printing, etc.).
+    - Optimizing the main disk (TRIM).
+    The computer will be restarted upon completion.
+
+.NOTES
+    Author:      joao-vcthr
+    Date:        09/21/2025
+    Requirements: Must be run as Administrator.
+#>
 
 $ErrorActionPreference = "Stop"
 

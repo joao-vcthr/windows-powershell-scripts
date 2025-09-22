@@ -1,4 +1,18 @@
+<#
+.SYNOPSIS
+    Installs a list of common user applications via Winget.
 
+.DESCRIPTION
+    This script automates the download and installation of a standard set of
+    productivity, communication, gaming, and utility applications.
+    The list includes Bitwarden, Discord, Steam, Epic Games, Riot Games
+    GOG Galaxy, EA Desktop, OBS Studio, Bulk Crap Uninstaller, HWiNFO, CPU-Z, GPU-Z and Fastfetch
+
+.NOTES
+    Author:      joao-vcthr
+    Date:        09/21/2025
+    Requirements: Must be run as Administrator. An internet connection is required.
+#>
 
 $winget_apps = @(
     "Bitwarden.Bitwarden",

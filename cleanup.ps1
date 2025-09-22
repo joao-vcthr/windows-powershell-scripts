@@ -1,3 +1,22 @@
+<#
+.SYNOPSIS
+    Performs routine system cleanup and maintenance tasks.
+
+.DESCRIPTION
+    This script is designed to be run periodically to maintain system health.
+    Tasks include:
+    - System file check and repair (DISM, SFC, CHKDSK).
+    - Disabling and cleaning up System Restore.
+    - Optimization of the main disk.
+    - DNS cache clearing and network component reset.
+    The computer will be restarted upon completion to finish the CHKDSK process.
+
+.NOTES
+    Author:      joao-vcthr
+    Date:        09/21/2025
+    Requirements: Must be run as Administrator.
+#>
+
 $ErrorActionPreference = "Stop"
 
 function Run-SystemCheck {
