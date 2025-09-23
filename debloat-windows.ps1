@@ -44,7 +44,7 @@ function Remove-MS-Apps() {
         Get-appxpackage $package | Remove-AppxPackage
     }
 
-    Write-Host "MS Apps Removed"
+    Write-Host "MS Apps Removed" -ForegroundColor Green
 }
 
 function Remove-Winget-Apps () {
@@ -83,7 +83,7 @@ function Remove-Winget-Apps () {
         winget uninstall $app  -e
     }
 
-    Write-Host "Winget Apps Removed"
+    Write-Host "Winget Apps Removed" -ForegroundColor Green
 }
 
 function Remove-Windows-Capabilities() {
@@ -105,11 +105,12 @@ function Remove-Windows-Capabilities() {
         Remove-WindowsCapability -Online -Name $capability
     }
 
-	Write-Host "Optional Features Removed"
+	Write-Host "Optional Features Removed" -ForegroundColor Green
 }
 
 function main() {
-    Write-Host "Debloating Windows" -ForegroundColor Green
+
+    Write-Host "Debloating Windows" -ForegroundColor Yellow
 
     Remove-MS-Apps
     Remove-Winget-Apps
@@ -117,8 +118,8 @@ function main() {
 
     Write-Host "Done! Restarting" -ForegroundColor Green
 
-    #Start-Sleep -Seconds 5
-    #Restart-Computer
+    Start-Sleep -Seconds 5
+    Restart-Computer
 }
 
 main
