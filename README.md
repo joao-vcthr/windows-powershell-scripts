@@ -1,6 +1,6 @@
 # Windows 11 Post-Install Scripts for Gaming
 
-This repository contains a collection of PowerShell scripts to automate the setup and optimisation of a **fresh Windows 11 installation** for gaming.
+This repository contains a collection of PowerShell scripts to automate the setup and optimisation of a **fresh Windows 11 installation** exclusively for gaming.
 
 ## ⚠️ Disclaimer
 
