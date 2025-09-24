@@ -77,7 +77,7 @@ function Remove-Winget-Apps () {
     )
 
     winget source update
-    Write-Host "Removing Winget Apps"
+    Write-Host "Removing Winget Apps" -ForegroundColor Yellow
 
     foreach($app in $apps) {
         winget uninstall $app  -e
