@@ -4,9 +4,9 @@
 
 .DESCRIPTION
     This script automates the download and installation of a standard set of
-    productivity, communication, gaming, and utility applications.
+    communication, gaming, and utility applications.
     The list includes Bitwarden, Discord, Steam, Epic Games, Riot Games
-    GOG Galaxy, EA Desktop, OBS Studio, Bulk Crap Uninstaller, HWiNFO, CPU-Z, GPU-Z and Fastfetch
+    GOG Galaxy, EA Desktop, RetroArch, OBS Studio, Bulk Crap Uninstaller, HWiNFO, CPU-Z, GPU-Z and Fastfetch
 
 .NOTES
     Author:      joao-vcthr
@@ -15,13 +15,13 @@
 #>
 
 $winget_apps = @(
-    "Bitwarden.Bitwarden",
     "Discord.Discord",
     "Valve.Steam",
     "EpicGames.EpicGamesLauncher",
     "RiotGames.LeagueOfLegends.BR",
     "GOG.Galaxy",
     "ElectronicArts.EADesktop",
+    "Libretro.RetroArch",
     "OBSProject.OBSStudio",
     "BleachBit.BleachBit",
     "Klocman.BulkCrapUninstaller",
